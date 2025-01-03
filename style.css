@@ -1,0 +1,552 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+html{
+    scroll-behavior: smooth ;
+}
+body{
+    background-color:white;
+}
+nav{
+    color: white;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    padding: 10px 60px;
+    gap: 30px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+nav ul a{
+    text-transform:capitalize;
+    text-decoration: none;
+    font-weight:300px;
+    flex-wrap: wrap;
+    font-size: large;
+    &:hover{
+        color:red;
+        transition-duration: 0.2s;
+    }
+}
+main{
+    margin-top: 40px;
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.uparrow{
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+}
+main .section1{
+    line-height: 20px;
+   
+}
+main .section1 h1{
+    color:blue;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+main .section1 h3{
+    text-transform:capitalize;
+}
+main .section1 h2{
+    text-transform:capitalize;
+    font-size: 30px;
+}
+main .section1 p{
+    text-transform:capitalize;
+}
+main .section1 button{
+    border:none;
+    background-color:blue;
+    width: 180px;
+    text-transform: uppercase;
+    font-weight:bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+    &:hover{
+        color:green;
+        transition-duration: 0.2s;
+        border-radius: 5px;
+        box-shadow: 0px 0px 4px;
+        border-radius: 20px;
+        background-color: black;
+    }
+}
+ .btnlgm{
+    display: flex;
+    flex-wrap: wrap;
+}  
+.section1 a{
+    text-decoration: none;
+    padding: 0px;
+}
+.linkedin:hover{
+    transform: scale(1.1);
+}
+.github{
+    border-radius: 50%;
+    background-color: white;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+.gmail:hover{
+    transform: scale(1.1);
+}
+.home-img .img-box{
+    width: 32vw;
+    height: 32vw;
+    border-radius: 50%;
+    padding: 2px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.home-img .img-box::before,
+.home-img .img-box::after{
+    content:'';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: conic-gradient(transparent,transparent,transparent,blue);  
+    transform: rotate(0deg);  
+    animation: rotate 10s linear infinite;
+}
+.home-img .img-box::after{
+    animation-delay: -5s;
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.home-img .img-box .img-item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background:black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    overflow:hidden;
+    z-index: 1;
+}
+.home-img .img-box .img-item img{
+    position: absolute;
+    display: block;
+    top: 10px;
+    width: 85%;
+    object-fit: cover;
+    mix-blend-mode: lighten; 
+}
+#secondpage{
+    height:100%;
+    padding: 90px 20px;
+    position: relative;
+}
+.about-me h1{
+    color:rgb(138, 133, 133);
+    text-transform:capitalize;
+    font-style: italic;
+    font-size:27px;
+    text-align: center;
+}
+.about-me p{
+    margin-top: 6px;
+    padding: 40px 10px;
+    word-spacing: 0.8px;
+    font-size: 1.3rem;
+    line-height: 40px;
+}
+#thirdpage{
+    display: flex; 
+    justify-content:center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+#skills{
+    color:rgb(138, 133, 133);
+    text-transform:capitalize;
+    font-style: italic;
+    font-size:27px;
+    text-align: center;
+    padding: 40px 0px ;
+    margin-top: 60px;
+}
+.htmlpng{
+    border-radius: 10px;
+    background-color: white;
+    width: 130px;
+    height: 150px;
+    border: solid 1px ;
+    &:hover{
+        transform: scale(1.03);
+        transition-duration: 0.1s;
+        box-shadow: 0px 0px 7px black;
+    }
+}
+.csspng{
+    background-color: white;
+    border-radius: 10px;
+    width: 130px;
+    height: 150px;
+    border: solid 1px ;
+    &:hover{
+        transform: scale(1.05);
+        transition-duration: 0.1s;
+        box-shadow: 0px 0px 7px black;
+    }
+}
+.javascriptpng{
+    border-radius: 10px;
+    background-color: white;
+    width: 130px;
+    height: 150px;
+    border: solid 1px ;
+    &:hover{
+        transform: scale(1.05);
+        transition-duration: 0.1s;
+        box-shadow: 0px 0px 7px black;
+    }
+}
+.reactpng{
+    border-radius: 10px;
+    border: solid 1px ;
+    width: 130px;
+    height: 150px;
+    &:hover{
+        transform: scale(1.05);
+        transition-duration: 0.1s;
+        box-shadow: 0px 0px 7px black;
+    }
+}
+.msqlpng{
+    border-radius: 10px;
+    background-color: white;
+    width: 130px;
+    height: 150px;
+    border: solid 1px ;
+    &:hover{
+        transform: scale(1.05);
+        transition-duration: 0.1s;
+        box-shadow: 0px 0px 7px black;
+    }
+}
+.nodejspng{
+    border-radius: 10px;
+    background-color: white;
+    width: 130px;
+    height: 150px;
+    border: solid 1px ;
+    &:hover{
+        transform: scale(1.05);
+        transition-duration: 0.1s;
+        box-shadow: 0px 0px 7px black;
+    }
+}
+#thirdpage .html{
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+#thirdpage .css{
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+#thirdpage .javascript{
+    text-align: center;
+    font-size:20px;
+    padding: 10px 2px;
+    text-transform: uppercase;
+}
+#thirdpage .react{
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+#thirdpage .mysql{
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+#thirdpage .nodejs{
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+#thirdpage img{
+    margin-left:35px;
+    margin-top: 10px;
+}
+#recent-projects{
+    text-transform:capitalize;
+    font-style: italic;
+    text-align: center;
+    font-weight: 100px;
+    font-size:27px;
+    color:rgb(138, 133, 133);
+    margin-top: 80px;
+}
+#projects{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:20px;
+    padding: 50px 20px;
+}
+.login{
+    width: 400px;
+    height: 250px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 7px rgb(172, 126, 42);
+}
+.mobile{
+    width: 400px;
+    height: 250px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 7px rgb(172, 126, 42);
+}
+.position{
+    width: 400px;
+    height: 250px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 7px rgb(172, 126, 42);
+}
+.calculator{
+    width: 400px;
+    height: 250px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 7px rgb(172, 126, 42);
+}
+.weather{
+    width: 400px;
+    height: 250px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 7px rgb(172, 126, 42);
+}
+.portfolio{
+    width: 400px;
+    height: 250px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 7px rgb(172, 126, 42);
+}
+.loginimg{
+    width:350px;
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 150px;
+    border-radius:20px;
+    border-bottom: none;
+}
+.mobileimg{
+    width:350px;
+    height: 150px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius:20px;
+    border-bottom: none;
+}
+.positionimg{
+    width:350px;
+    height: 150px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius:20px;
+    border-bottom: none;
+}
+.calculatojsimg{
+    width:350px;
+    height: 150px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius:20px;
+    border-bottom: none;
+}
+.weatherimg{
+    width:350px;
+    height: 150px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius:20px;
+    border-bottom: none;
+}
+.portfolioimg{
+    width:350px;
+    height: 150px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius:20px;
+    border-bottom: none;
+}
+#projects h4{
+    font-family: sans-serif;
+    text-transform:capitalize;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+.github-link{
+    width: 30px;
+}
+footer{
+    background-color:rgb(10, 10, 10);
+    padding: 30px;
+    margin-top: 15px;
+}
+.contact{ 
+    font-family: 'Poppins',sans-serif;
+    font-size: 20px;
+    font-weight:10;
+    width: fit-content;
+    margin: auto;
+    text-transform:capitalize;
+    color: white;
+
+}
+.copyrights{
+    font-family: 'Poppins',sans-serif;
+    text-align:center;
+    font-size: 12px;
+    text-transform: uppercase;
+    color:white;
+    opacity: 0.5;
+} 
+.footerimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+footer .twitter{
+    background-color: white;
+    border-radius: 50%;
+    border:solid 1px white
+}
+@media screen and (width<=850px){
+    nav,nav>ul{
+        flex-direction: column;
+        align-items:end;
+        gap: 10px;
+    }
+    .home-img .img-box{
+        width: 60vw;
+        height: 60vw;
+    }
+    main{
+        justify-content:space-evenly;
+        gap:20px;
+    }
+    main .section1{
+    width: 100%;
+    padding:30px;
+    order: 2;
+    }
+    .uparrow{
+        position:fixed;
+        right: 10px;
+        bottom: 100px;
+    }
+    .section1 h1{
+        margin-top: 10px;
+    }
+    main h3{
+        margin:auto;
+        padding: 0px;
+    }
+    main .section2{
+        width:200px;
+        height:200px;  
+    }
+    main .section1 button{
+        padding: 2px;
+    }
+    #secondpage{
+        padding:0;
+    }
+    .about-me p{
+        line-height: 27px;
+        font-size:15px;
+        padding: 0px 20px;
+    }
+    #skills{
+        padding: 0px;
+        text-align:center;
+    }
+    .login{
+        width: 350px;
+        height: 250px;
+    }
+    .loginimg{
+        width: 250px;
+        height: 150px;
+        margin-left: 40px;
+    }
+    .mobile{
+        width: 350px;
+        height: 250px;
+    }
+    .mobileimg{
+        width: 250px;
+        height: 150px;
+        margin-left: 40px;
+    }
+    .position{
+        width: 350px;
+        height: 250px;
+    }
+    .positionimg{
+        width: 250px;
+        height: 150px;
+        margin-left: 40px;
+    }
+    .calculator{
+        width: 350px;
+        height: 250px;
+    }
+    .calculatojsimg{
+        width: 250px;
+        height: 150px;
+        margin-left: 40px;
+    }
+    .weather{
+        width: 350px;
+        height: 250px;
+    }
+    .weatherimg{
+        width: 250px;
+        height: 150px;
+        margin-left: 40px;
+    }
+    .portfolio{
+        width: 350px;
+        height: 250px;
+    }
+    .portfolioimg{
+        width: 250px;
+        height: 150px;
+        margin-left: 40px;
+    }
+}
