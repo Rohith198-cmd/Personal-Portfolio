@@ -8,7 +8,7 @@ html{
     scroll-behavior: smooth ;
 }
 body{
-    background-color:white;
+    background-color:rgb(31, 30, 30);
 }
 nav{
     color: white;
@@ -18,13 +18,14 @@ nav{
     margin-top: 10px;
     flex-wrap: wrap;
     padding: 10px 60px;
-    gap: 30px;
-}
-nav ul {
+    gap:10px;
+} 
+ nav ul {
     display: flex;
     list-style: none;
     gap: 40px;
     flex-wrap: wrap;
+
 }
 nav ul a{
     text-transform:capitalize;
@@ -32,11 +33,7 @@ nav ul a{
     font-weight:300px;
     flex-wrap: wrap;
     font-size: large;
-    &:hover{
-        color:red;
-        transition-duration: 0.2s;
-    }
-}
+} 
 main{
     margin-top: 40px;
     height: 100%;
@@ -49,38 +46,51 @@ main{
 }
 .uparrow{
     position: fixed;
-    right: 10px;
+    right:5px;
     bottom: 20px;
+    background-color:rgb(20, 161, 204);
+    border-radius: 50%;
+    
 }
 main .section1{
     line-height: 20px;
+    margin-left: 25px;
    
 }
+main .section1 .iam{
+    text-transform: capitalize;
+
+}
 main .section1 h1{
-    color:blue;
+    color:rgb(20, 161, 204);
+    text-transform:uppercase;
     font-weight: bold;
-    text-transform: uppercase;
 }
 main .section1 h3{
+    color: rgb(112, 105, 105);
     text-transform:capitalize;
 }
 main .section1 h2{
-    text-transform:capitalize;
+    color:rgb(20, 161, 204);
+    text-transform:uppercase;
     font-size: 30px;
+    font-weight: bold;
 }
 main .section1 p{
+    letter-spacing: 0.9px;
+    color: rgb(133, 124, 124);
     text-transform:capitalize;
 }
 main .section1 button{
     border:none;
     background-color:blue;
-    width: 180px;
+    width: 170px;
     text-transform: uppercase;
     font-weight:bold;
     cursor: pointer;
     letter-spacing: 1px;
     &:hover{
-        color:green;
+        color:rgb(20, 161, 204);
         transition-duration: 0.2s;
         border-radius: 5px;
         box-shadow: 0px 0px 4px;
@@ -91,13 +101,11 @@ main .section1 button{
  .btnlgm{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }  
 .section1 a{
     text-decoration: none;
     padding: 0px;
-}
-.linkedin:hover{
-    transform: scale(1.1);
 }
 .github{
     border-radius: 50%;
@@ -106,9 +114,12 @@ main .section1 button{
         transform: scale(1.1);
     }
 }
-.gmail:hover{
-    transform: scale(1.1);
+.linkedin,.github,.gmail,.whatsapp{
+    &:hover{
+        transform: scale(1.1);
+    }
 }
+
 .home-img .img-box{
     width: 32vw;
     height: 32vw;
@@ -126,7 +137,7 @@ main .section1 button{
     position: absolute;
     width: 500px;
     height: 500px;
-    background: conic-gradient(transparent,transparent,transparent,blue);  
+    background: conic-gradient(transparent,transparent,transparent,rgb(7, 206, 241));  
     transform: rotate(0deg);  
     animation: rotate 10s linear infinite;
 }
@@ -160,16 +171,26 @@ main .section1 button{
 #secondpage{
     height:100%;
     padding: 90px 20px;
-    position: relative;
+}
+.about{
+    color:rgb(20, 161, 204);
+    text-transform: uppercase;
+    font-weight: 700;
 }
 .about-me h1{
     color:rgb(138, 133, 133);
     text-transform:capitalize;
-    font-style: italic;
     font-size:27px;
-    text-align: center;
+    padding: 0px 2px;
+    width: 150px;
+    margin: auto;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: solid 1px rgb(20, 161, 204);
 }
 .about-me p{
+    color: white;
     margin-top: 6px;
     padding: 40px 10px;
     word-spacing: 0.8px;
@@ -185,17 +206,19 @@ main .section1 button{
     padding: 30px;
 }
 #skills{
-    color:rgb(138, 133, 133);
-    text-transform:capitalize;
-    font-style: italic;
+    color:rgb(20, 161, 204);
+    width: 150px;
+    font-weight: 700;
+    text-transform:uppercase;
     font-size:27px;
+    margin: auto;
+    margin-top:80px;
     text-align: center;
-    padding: 40px 0px ;
-    margin-top: 60px;
+    border: solid 1px rgb(112, 105, 105);
 }
 .htmlpng{
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(173, 164, 164);
     width: 130px;
     height: 150px;
     border: solid 1px ;
@@ -206,7 +229,7 @@ main .section1 button{
     }
 }
 .csspng{
-    background-color: white;
+    background-color:rgb(173, 164, 164);
     border-radius: 10px;
     width: 130px;
     height: 150px;
@@ -219,7 +242,7 @@ main .section1 button{
 }
 .javascriptpng{
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(173, 164, 164);
     width: 130px;
     height: 150px;
     border: solid 1px ;
@@ -232,6 +255,7 @@ main .section1 button{
 .reactpng{
     border-radius: 10px;
     border: solid 1px ;
+     background-color:rgb(173, 164, 164);
     width: 130px;
     height: 150px;
     &:hover{
@@ -242,7 +266,7 @@ main .section1 button{
 }
 .msqlpng{
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(173, 164, 164);
     width: 130px;
     height: 150px;
     border: solid 1px ;
@@ -254,7 +278,7 @@ main .section1 button{
 }
 .nodejspng{
     border-radius: 10px;
-    background-color: white;
+    background-color:rgb(173, 164, 164);
     width: 130px;
     height: 150px;
     border: solid 1px ;
@@ -266,44 +290,54 @@ main .section1 button{
 }
 #thirdpage .html{
     text-align: center;
-    padding: 10px;
+    padding: 35px 0px;
+    font-size:18px;
     text-transform: uppercase;
 }
 #thirdpage .css{
     text-align: center;
-    padding: 10px;
+    font-size:18px;
+    padding: 35px 0px;
     text-transform: uppercase;
 }
 #thirdpage .javascript{
     text-align: center;
-    font-size:20px;
-    padding: 10px 2px;
+    font-size:18px;
+    padding: 35px 2px;
     text-transform: uppercase;
 }
 #thirdpage .react{
     text-align: center;
-    padding: 10px;
+    font-size:18px;
+    padding: 35px 0px;
     text-transform: uppercase;
 }
 #thirdpage .mysql{
     text-align: center;
-    padding: 10px;
+    font-size:18px;
+    padding: 35px 0px;
     text-transform: uppercase;
 }
 #thirdpage .nodejs{
     text-align: center;
-    padding: 10px;
+    font-size:18px;
+    padding: 35px 0px;
     text-transform: uppercase;
 }
 #thirdpage img{
     margin-left:35px;
     margin-top: 10px;
 }
+.recent{
+    color:rgb(20, 161, 204);
+}
 #recent-projects{
-    text-transform:capitalize;
-    font-style: italic;
+    text-transform:uppercase;
+    border: solid 1px;
+    width: 275px;
     text-align: center;
-    font-weight: 100px;
+    font-weight: 700;
+    margin: auto;
     font-size:27px;
     color:rgb(138, 133, 133);
     margin-top: 80px;
@@ -320,37 +354,37 @@ main .section1 button{
     width: 400px;
     height: 250px;
     border-radius: 30px;
-    box-shadow: 0px 0px 7px rgb(172, 126, 42);
+    box-shadow: 0px 0px 7px rgb(20, 161, 204);
 }
 .mobile{
     width: 400px;
     height: 250px;
     border-radius: 30px;
-    box-shadow: 0px 0px 7px rgb(172, 126, 42);
+    box-shadow: 0px 0px 7px rgb(20, 161, 204);
 }
 .position{
     width: 400px;
     height: 250px;
     border-radius: 30px;
-    box-shadow: 0px 0px 7px rgb(172, 126, 42);
+    box-shadow: 0px 0px 7px rgb(20, 161, 204);
 }
 .calculator{
     width: 400px;
     height: 250px;
     border-radius: 30px;
-    box-shadow: 0px 0px 7px rgb(172, 126, 42);
+    box-shadow: 0px 0px 7px rgb(20, 161, 204);
 }
 .weather{
     width: 400px;
     height: 250px;
     border-radius: 30px;
-    box-shadow: 0px 0px 7px rgb(172, 126, 42);
+    box-shadow: 0px 0px 7px rgb(20, 161, 204);
 }
 .portfolio{
     width: 400px;
     height: 250px;
     border-radius: 30px;
-    box-shadow: 0px 0px 7px rgb(172, 126, 42);
+    box-shadow: 0px 0px 7px rgb(20, 161, 204);
 }
 .loginimg{
     width:350px;
@@ -401,11 +435,10 @@ main .section1 button{
     border-bottom: none;
 }
 #projects h4{
-    font-family: sans-serif;
     text-transform:capitalize;
     padding: 20px;
     text-align: center;
-    color: black;
+    color:rgb(184, 176, 176);
 }
 .github-link{
     width: 30px;
@@ -422,7 +455,7 @@ footer{
     width: fit-content;
     margin: auto;
     text-transform:capitalize;
-    color: white;
+    color: rgb(150, 140, 140);
 
 }
 .copyrights{
@@ -461,8 +494,11 @@ footer .twitter{
     }
     main .section1{
     width: 100%;
-    padding:30px;
+    padding:20px;
     order: 2;
+    }
+    main .section1 button{
+        width: 150px;
     }
     .uparrow{
         position:fixed;
@@ -483,16 +519,15 @@ footer .twitter{
     main .section1 button{
         padding: 2px;
     }
-    #secondpage{
-        padding:0;
-    }
     .about-me p{
+        color: rgb(197, 186, 186);
         line-height: 27px;
-        font-size:15px;
-        padding: 0px 20px;
+        font-size:18px;
+        padding: 0px 10px;
+        margin-top: 30px;
     }
     #skills{
-        padding: 0px;
+        margin-top: 0px;
         text-align:center;
     }
     .login{
@@ -549,4 +584,12 @@ footer .twitter{
         height: 150px;
         margin-left: 40px;
     }
+}
+
+.container-fluid{
+    background-color: rgb(53, 51, 51);
+    
+}
+.navbar{
+    padding: 0px;
 }
