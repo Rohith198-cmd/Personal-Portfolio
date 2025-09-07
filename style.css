@@ -8,7 +8,7 @@ html{
     scroll-behavior: smooth ;
 }
 body{
-    background: linear-gradient(115deg,#413046,#3e044d);
+    background-color: white;
 }
 nav{
     color: white;
